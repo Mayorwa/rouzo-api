@@ -1,0 +1,20 @@
+extends baseEmail
+
+block content
+    img(src="cid:logo" alt="Rouzo Logo" width="120")
+    p Hello #{firstName},
+    p Welcome to Rouzo, we're glad to have you 🎉🙏
+    p Rouzo is an online lending market place that allows you to buy!
+    p units in our portfolios’ that are then used to lend to small businesses.
+    p You have been successfully registered, please click the link below to activate your dashboard.
+    table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+        tbody
+            tr
+                td(align='left')
+                    table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+                        tbody
+                            tr
+                                td
+                                    a(href=`${url}`, target='_blank') Verify your account
+    p If you need any help with investment, please don't hesitate to contact us at hello@rouzo.org!
+    p - Tale Alimi, CEO
